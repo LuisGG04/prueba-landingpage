@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "MuseoSans-300";
+    src: url("../css/fonts/MuseoSans-300.ttf");
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: "MuseoSans-500";
+    src: url("../css/fonts/MuseoSans-500.ttf");
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "MuseoSans-700";
+    src: url("../css/fonts/MuseoSans-700.ttf");
+    font-weight: 700;
+}
+
+hr{
+    background-color: #fafafa;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: MuseoSans-300;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero{
+    width: 100%;
+    height: 95vh
+    /* justify-content: center; */
+}
+
+.alert{
+    width: 100%;
+    height: 42px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    background-color: #EBA904;
+    font-size: 12px;
+    color: #f2f2f2;
+}
+
+.alert__title{
+    line-height: 40px;
+}
+
+.hero__nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.logo__img{
+    cursor: pointer;
+}
+
+.nav__links{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.nav__link{
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero__main{
+    width: 100%;
+    height: 100%;
+    /* justify-content: center; */
+}
+
+.nav__icon{
+    width: 28px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.main__logo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.logo__ekco{
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.main__banner{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    background-image: radial-gradient( circle 976px at 51.2% 51%,#01B3F1 30%, #007dc6, #008CD1);
+    color: #fafafa;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__text{
+    width: 36%;
+}
+
+.main__title{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.main__paragraph--mod{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.main__img{
+    width: 34%;
+    overflow: hidden;
+}
+
+.banner__img{
+    width: 100%;
+}
+
+.recipe__container{
+    width: 100%;
+    height: 800px;
+    margin: 58px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.recipe__banner{
+    width: 50%;
+}
+
+.recipe__text{
+    width: 50%;
+}
+
+.recipe__title{
+    display: inline-block;
+    line-height: 60px;
+    width: 100%;
+    height: 80px;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.recipe__subtitle{
+    margin: 40px 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.recipe__paragraph{
+    margin: 20px 0;
+}
+
+.recipe__link{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.slick__info{
+    margin: 0 40px;
+    width: 100%;
+    max-height: 1200px;
+}
+
+.slick__title{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.slick{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+.slick__container{
+    width: 25%;
+    height: 70%;
+}
+
+.slick__img{
+    background-color: #01B5F2;
+    width: 250px;
+    height: 250px;
+}
+
+.slick__img--mod1{
+    background-color: #00B4F3;
+}
+.slick__img--mod2{
+    background-color: #00A3E4;
+}
+.slick__img--mod3{
+    background-color: #008ED0;
+}
+.slick__img--mod4{
+    background-color: #007FC6;
+}
+
+.slick__paragraph{
+    font-size: 14px;
+}
+
+.slick__link{
+    display: inline-block;
+    margin: 0 90px;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+.skill__bar{
+    width: 40px;
+    height: 2px;
+    background-color: #EBA904;
+    display: block;
+}
+
+.skill__bar--mod{
+    margin: 0 90px;
+}
+
+.footer{
+    width: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.questions{
+    width: 47%;
+}
+
+.desactived{
+    display: none;
+}
+.icon__slide{
+    cursor: pointer;
+}
+
+.question__slide{
+    border-bottom: 2px solid;
+    transition: transform 2s ease-in-out;
+}
+
+.question__text{
+    transition: ease-in-out;
+}
+
+.question__paragraph{
+    transition: tranform 2s;
+}
+
+.characters{
+    width: 47%;
+}
+
+.character__info{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.character__text{
+    margin: 0 15px;
+    width: 100%;
+}
+
+.character__title, .character__name, .character__gender{
+    margin: 15px 0;
+}
+
+.character__chapters{
+    list-style: none;
+}
