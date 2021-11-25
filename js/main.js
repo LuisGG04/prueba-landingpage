@@ -1,28 +1,25 @@
-const moreIcon = document.querySelectorAll(".icon__slide");
-const paragraph = document.querySelectorAll(".question__paragraph");
+const questions = () => {
+    const titleQuestions = [...document.querySelectorAll(".questions__title")];
 
-for (let i = 0; i < moreIcon.length; i++) {
+    titleQuestions.forEach(question => {
+        question.addEventListener("click", () => {
+            let height = 0;
+            let answer = question.nextElementSibling;
+            let addPadding = question.parentElement.parentElement;
 
-    const icon = moreIcon[i];
+            addPadding.classList.toggle("questions__padding--add");
+            question.children[0].classList.toggle("question__arrow--rotate");
 
-    icon.addEventListener('click', () => {
-        paragraph[i].classList.toggle("desactived")
-        if (icon.innerHTML == '-') {
-            icon.innerHTML = '+'
-        } else {
-            icon.innerHTML = '-'
-        }
-    })
-    
-}
+            if(answer.clientHeight === 0){
+                height = answer.scrollHeight;
+            }
 
-// icon.addEventListener("click", () => {
-//     if(icon.src.includes("min.svg")){
-//         icon.src = "./css/images/plus.svg"
-//     }else{
-//         icon.src = "./css/images/min.svg"
-//     }
-// })
+            answer.style.height = `${height}px`
+        });
+    });
+};
+
+questions()
 
 const img = document.getElementById("img");
 const characterName = document.getElementById("characterName");
